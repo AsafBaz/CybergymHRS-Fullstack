@@ -1,0 +1,11 @@
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Core\bin\Debug\net8.0\CybergymHRS.Core.deps.json
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Core\bin\Debug\net8.0\CybergymHRS.Core.dll
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Core\bin\Debug\net8.0\CybergymHRS.Core.pdb
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Core\obj\Debug\net8.0\CybergymHRS.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Core\obj\Debug\net8.0\CybergymHRS.Core.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Core\obj\Debug\net8.0\CybergymHRS.Core.AssemblyInfo.cs
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Core\obj\Debug\net8.0\CybergymHRS.Core.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Core\obj\Debug\net8.0\CybergymHRS.Core.dll
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Core\obj\Debug\net8.0\refint\CybergymHRS.Core.dll
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Core\obj\Debug\net8.0\CybergymHRS.Core.pdb
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Core\obj\Debug\net8.0\ref\CybergymHRS.Core.dll

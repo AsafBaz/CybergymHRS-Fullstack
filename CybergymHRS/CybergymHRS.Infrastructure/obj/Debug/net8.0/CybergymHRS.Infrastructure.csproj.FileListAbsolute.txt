@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\bin\Debug\net8.0\CybergymHRS.Infrastructure.deps.json
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\bin\Debug\net8.0\CybergymHRS.Infrastructure.runtimeconfig.json
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\bin\Debug\net8.0\CybergymHRS.Infrastructure.dll
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\bin\Debug\net8.0\CybergymHRS.Infrastructure.pdb
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\bin\Debug\net8.0\CybergymHRS.Core.dll
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\bin\Debug\net8.0\CybergymHRS.Core.pdb
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\obj\Debug\net8.0\CybergymHRS.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\obj\Debug\net8.0\CybergymHRS.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\obj\Debug\net8.0\CybergymHRS.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\obj\Debug\net8.0\CybergymHRS.Infrastructure.AssemblyInfo.cs
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\obj\Debug\net8.0\CybergymHRS.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\obj\Debug\net8.0\Cybergym.CAED94BD.Up2Date
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\obj\Debug\net8.0\CybergymHRS.Infrastructure.dll
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\obj\Debug\net8.0\refint\CybergymHRS.Infrastructure.dll
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\obj\Debug\net8.0\CybergymHRS.Infrastructure.pdb
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\obj\Debug\net8.0\CybergymHRS.Infrastructure.genruntimeconfig.cache
+C:\Users\User\source\repos\CybergymHRS\CybergymHRS.Infrastructure\obj\Debug\net8.0\ref\CybergymHRS.Infrastructure.dll
