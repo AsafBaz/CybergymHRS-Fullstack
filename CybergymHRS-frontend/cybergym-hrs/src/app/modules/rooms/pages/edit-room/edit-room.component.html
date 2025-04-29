@@ -1,0 +1,41 @@
+<mat-card class="reservation-card">
+  <h2>Edit Room</h2>
+
+  <form [formGroup]="roomForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Room Number</mat-label>
+      <input matInput formControlName="roomNumber">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Type</mat-label>
+      <input matInput formControlName="type">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Capacity</mat-label>
+      <input matInput type="number" formControlName="capacity">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Price Per Night</mat-label>
+      <input matInput type="number" formControlName="pricePerNight">
+    </mat-form-field>
+
+    <!-- <mat-checkbox formControlName="isAvailable">
+      Available
+    </mat-checkbox> -->
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="roomForm.invalid">
+      Update
+    </button>
+    <button mat-stroked-button color="secondary" routerLink="/rooms" style="margin-top: 10px;">
+      Back to Rooms
+    </button>
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+  </div>
+
+  </form>
+</mat-card>

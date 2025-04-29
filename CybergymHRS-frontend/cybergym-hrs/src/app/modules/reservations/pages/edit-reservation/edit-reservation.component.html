@@ -1,0 +1,39 @@
+<mat-card class="reservation-card">
+  <h2>Edit Reservation</h2>
+
+  <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Check-In Date</mat-label>
+      <input matInput [matDatepicker]="checkInPicker" formControlName="checkInDate">
+      <mat-datepicker-toggle matSuffix [for]="checkInPicker"></mat-datepicker-toggle>
+      <mat-datepicker #checkInPicker></mat-datepicker>
+      <mat-error *ngIf="reservationForm.get('checkInDate')?.hasError('required')">
+        Check-In Date is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Check-Out Date</mat-label>
+      <input matInput [matDatepicker]="checkOutPicker" formControlName="checkOutDate">
+      <mat-datepicker-toggle matSuffix [for]="checkOutPicker"></mat-datepicker-toggle>
+      <mat-datepicker #checkOutPicker></mat-datepicker>
+      <mat-error *ngIf="reservationForm.get('checkOutDate')?.hasError('required')">
+        Check-Out Date is required
+      </mat-error>
+    </mat-form-field>
+
+    <div *ngIf="reservationForm.errors?.datesInvalid && (reservationForm.touched || reservationForm.dirty)" class="error-message">
+      Check-in date must be before Check-out date.
+    </div>
+
+    <button mat-raised-button color="primary" type="submit" [disabled]="reservationForm.invalid">
+      Save Changes
+    </button>
+    <button mat-stroked-button color="secondary" routerLink="/reservations" style="margin-top: 10px;">
+      Back to Reservations
+    </button>
+    
+
+  </form>
+</mat-card>

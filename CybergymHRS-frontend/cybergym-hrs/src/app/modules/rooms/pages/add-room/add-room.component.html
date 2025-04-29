@@ -1,0 +1,46 @@
+<mat-card class="card">
+  <h2>Add Room</h2>
+
+  <form [formGroup]="roomForm" (ngSubmit)="onSubmit()">
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Room Number</mat-label>
+      <input matInput formControlName="roomNumber">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Room Type</mat-label>
+      <mat-select formControlName="type">
+        <mat-option *ngFor="let type of roomTypes" [value]="type">{{ type }}</mat-option>
+      </mat-select>
+      <mat-error *ngIf="roomForm.get('type')?.hasError('required')">
+        Room Type is required
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Capacity</mat-label>
+      <input matInput type="number" formControlName="capacity">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Price Per Night</mat-label>
+      <input matInput type="number" formControlName="pricePerNight">
+    </mat-form-field>
+
+    <!-- <mat-checkbox formControlName="isAvailable">
+      Available
+    </mat-checkbox> -->
+    <br><br>
+    <button mat-raised-button color="primary" type="submit" [disabled]="roomForm.invalid">
+      Save
+    </button>
+    <button mat-stroked-button color="secondary" routerLink="/rooms" style="margin-top: 10px;">
+      Back to Rooms
+    </button>
+    <div *ngIf="errorMessage" class="error-message">
+      {{ errorMessage }}
+  </div>
+
+  </form>
+</mat-card>

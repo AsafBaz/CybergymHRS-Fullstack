@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span class="app-title">Hotel Reservation System</span>
+  <span class="spacer"></span>
+  <button *ngIf="isLoggedIn" mat-button color="accent" (click)="logout()">Logout</button>
+</mat-toolbar>
+
+<!-- <nav>
+  <a routerLink="/auth/login">Login</a> |
+  <a routerLink="/auth/register">Register</a> |
+  <a routerLink="/rooms">Rooms</a> |
+  <a routerLink="/reservations">Reservations</a>
+</nav> -->
+
+<router-outlet></router-outlet>

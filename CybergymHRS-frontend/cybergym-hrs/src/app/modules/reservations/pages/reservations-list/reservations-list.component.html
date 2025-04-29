@@ -1,0 +1,52 @@
+<mat-card class="card">
+  <h2>Reservations Management</h2>
+
+  <button mat-raised-button color="accent" routerLink="/reservations/add">Add Reservation</button>
+  <button mat-raised-button color="primary" routerLink="/rooms">Go to Rooms</button>
+  <table mat-table [dataSource]="reservations" class="full-width" *ngIf="reservations?.length">
+
+    <ng-container matColumnDef="room">
+      <th mat-header-cell *matHeaderCellDef> Room </th>
+      <td mat-cell *matCellDef="let reservation">
+        Room {{ reservation.room?.roomNumber }} - {{ reservation.room?.type }} ({{ reservation.room?.capacity }} people) - ${{ reservation.room?.pricePerNight }}/night
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="userId">
+      <th mat-header-cell *matHeaderCellDef> User ID </th>
+      <td mat-cell *matCellDef="let reservation"> {{ reservation.userId }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="roomId">
+      <th mat-header-cell *matHeaderCellDef> Room ID </th>
+      <td mat-cell *matCellDef="let reservation"> {{ reservation.roomId }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="checkInDate">
+      <th mat-header-cell *matHeaderCellDef> Check In </th>
+      <td mat-cell *matCellDef="let reservation"> {{ reservation.checkInDate | date:'dd/MM/yyyy' }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="checkOutDate">
+      <th mat-header-cell *matHeaderCellDef> Check Out </th>
+      <td mat-cell *matCellDef="let reservation"> {{ reservation.checkOutDate | date:'dd/MM/yyyy' }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef> Status </th>
+      <td mat-cell *matCellDef="let reservation"> {{ reservation.status }} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef> Actions </th>
+      <td mat-cell *matCellDef="let reservation">
+        <button mat-button color="primary" [routerLink]="['/reservations/edit', reservation.id]">Edit</button>
+        <button mat-button color="warn" (click)="deleteReservation(reservation.id)">Delete</button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+</mat-card>
